@@ -1,0 +1,22 @@
+[
+  {
+    "id": "frontend-core",
+    "category": "Frontend",
+    "skills": ["React", "Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Three.js"]
+  },
+  {
+    "id": "backend-core",
+    "category": "Backend",
+    "skills": ["Node.js", "Express", "PostgreSQL", "Redis", "GraphQL", "Go"]
+  },
+  {
+    "id": "cloud-infrastructure",
+    "category": "Cloud",
+    "skills": ["AWS", "Docker", "Kubernetes", "Vercel", "CI/CD Pipelines"]
+  },
+  {
+    "id": "tools-workflows",
+    "category": "Tools",
+    "skills": ["Git", "Figma", "Jest", "Playwright", "Lighthouse"]
+  }
+]

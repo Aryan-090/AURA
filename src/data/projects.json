@@ -1,0 +1,29 @@
+[
+  {
+    "id": "aura-platform",
+    "slug": "aura-platform",
+    "title": "AURA Digital Experience",
+    "tagline": "A premium Digital Engineering Experience Platform.",
+    "category": "Flagship",
+    "technologies": ["Next.js", "TypeScript", "Tailwind CSS", "React Three Fiber"],
+    "featured": true
+  },
+  {
+    "id": "project-nebula",
+    "slug": "project-nebula",
+    "title": "Project Nebula",
+    "tagline": "A scalable real-time analytics dashboard.",
+    "category": "Production",
+    "technologies": ["React", "Node.js", "WebSockets", "Redis"],
+    "featured": false
+  },
+  {
+    "id": "rust-compiler-experiments",
+    "slug": "rust-compiler-experiments",
+    "title": "Rust Compiler Optimization",
+    "tagline": "Experimenting with memory-safe concurrency.",
+    "category": "Learning",
+    "technologies": ["Rust", "LLVM", "WebAssembly"],
+    "featured": true
+  }
+]

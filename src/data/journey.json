@@ -1,0 +1,30 @@
+[
+  {
+    "id": "computer-science-degree",
+    "year": "2019",
+    "title": "B.S. Computer Science",
+    "description": "Graduated with honors, focusing on distributed systems and software architecture.",
+    "category": "Education"
+  },
+  {
+    "id": "first-engineering-role",
+    "year": "2020",
+    "title": "Software Engineer at TechCorp",
+    "description": "Developed high-throughput microservices using Node.js and Go.",
+    "category": "Career"
+  },
+  {
+    "id": "senior-engineer-promotion",
+    "year": "2023",
+    "title": "Senior Frontend Engineer",
+    "description": "Led the migration of a monolithic SPA to a Next.js App Router architecture.",
+    "category": "Career"
+  },
+  {
+    "id": "aura-launch",
+    "year": "2026",
+    "title": "Launched AURA Platform",
+    "description": "Designed and built the AURA Digital Experience platform as a showcase of modern engineering.",
+    "category": "Achievement"
+  }
+]
