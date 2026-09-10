@@ -60,10 +60,24 @@ export default function EngineeringLab() {
           {/* Orbiting Nodes */}
           {capabilities.map((cap, index) => {
             const isActive = activeNode === cap.id;
+            
+            // Calculate outward tooltip placement based on node position
+            const getTooltipPosition = (i: number) => {
+              switch(i) {
+                case 0: return "bottom-[75%] left-[75%]"; // Top node -> Top-right
+                case 1: return "top-1/2 -translate-y-1/2 left-[105%]"; // Top-right node -> Right
+                case 2: return "top-1/2 -translate-y-1/2 left-[105%]"; // Bottom-right node -> Right
+                case 3: return "top-[75%] left-[75%]"; // Bottom node -> Bottom-right
+                case 4: return "top-1/2 -translate-y-1/2 right-[105%]"; // Bottom-left node -> Left
+                case 5: return "top-1/2 -translate-y-1/2 right-[105%]"; // Top-left node -> Left
+                default: return "top-full mt-4";
+              }
+            };
+
             return (
               <div 
                 key={cap.id}
-                className="absolute z-10 transition-all duration-300"
+                className={`absolute transition-all duration-300 ${isActive ? 'z-30' : 'z-10'}`}
                 style={spatialPositions[index % spatialPositions.length]}
                 onMouseEnter={() => setActiveNode(cap.id)}
                 onMouseLeave={() => setActiveNode(null)}
@@ -77,10 +91,10 @@ export default function EngineeringLab() {
                   <AnimatePresence>
                     {isActive && (
                       <motion.div 
-                        initial={{ opacity: 0, y: 10, scale: 0.95 }}
-                        animate={{ opacity: 1, y: 0, scale: 1 }}
-                        exit={{ opacity: 0, y: 10, scale: 0.95 }}
-                        className="absolute top-full mt-4 w-64 glass-02 p-4 rounded-xl border border-[var(--border-color)] pointer-events-none z-50 shadow-2xl"
+                        initial={{ opacity: 0, scale: 0.95 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        exit={{ opacity: 0, scale: 0.95 }}
+                        className={`absolute ${getTooltipPosition(index)} w-64 glass-02 p-4 rounded-xl border border-[var(--border-color)] pointer-events-none z-50 shadow-2xl`}
                       >
                         <div className="flex flex-wrap gap-2">
                           {cap.skills.map(skill => (

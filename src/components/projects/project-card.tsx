@@ -11,7 +11,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
       href={`/products/${project.slug}`} 
       eventName="project_opened"
       eventMetadata={{ projectId: project.id, category: project.category }}
-      className="group block relative w-full aspect-[4/5] sm:aspect-[16/9] lg:aspect-[21/9] rounded-3xl overflow-hidden glass-01 border border-[var(--border-color)] hover:border-[var(--brand-primary)]/50 transition-colors duration-500"
+      className="group flex flex-col relative w-full h-full rounded-3xl overflow-hidden glass-01 border border-[var(--border-color)] hover:border-[var(--brand-primary)]/50 transition-colors duration-500"
       data-cursor-text="EXPLORE"
     >
       {/* Background / Simulated Video Trailer Layer */}
@@ -30,44 +30,42 @@ export function ProjectCard({ project }: ProjectCardProps) {
       <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent z-10 group-hover:from-black group-hover:via-black/60 transition-all duration-500"></div>
 
       {/* Content Layer */}
-      <div className="absolute inset-0 z-20 p-6 sm:p-8 flex flex-col justify-end transform group-hover:-translate-y-2 transition-transform duration-500">
+      <div className="relative z-20 p-6 md:p-8 flex flex-col justify-end flex-grow transform group-hover:-translate-y-1 transition-transform duration-500 min-h-[240px]">
         
-        <div className="flex justify-between items-end w-full mb-4 opacity-100 sm:opacity-0 sm:-translate-y-4 sm:group-hover:opacity-100 sm:group-hover:translate-y-0 transition-all duration-500">
-          <div className="flex gap-2">
-            <span className="inline-block px-3 py-1 bg-black/50 backdrop-blur-md text-white text-xs font-bold rounded-md uppercase tracking-widest border border-white/10">
-              {project.category}
-            </span>
-            <span className={`inline-block px-3 py-1 bg-black/50 backdrop-blur-md text-xs font-bold rounded-md uppercase tracking-widest border border-white/10 ${project.status === 'DATA_REQUIRED' ? 'text-[var(--brand-accent)]' : 'text-[var(--brand-primary)]'}`}>
-              {project.status === 'DATA_REQUIRED' ? 'In Development' : project.status}
-            </span>
-          </div>
+        <div className="flex flex-wrap gap-2 items-end w-full mb-4 opacity-100 sm:opacity-0 sm:-translate-y-4 sm:group-hover:opacity-100 sm:group-hover:translate-y-0 transition-all duration-500">
+          <span className="inline-block px-2 py-1 bg-black/50 backdrop-blur-md text-white text-[10px] font-bold rounded uppercase tracking-widest border border-white/10">
+            {project.category}
+          </span>
+          <span className={`inline-block px-2 py-1 bg-black/50 backdrop-blur-md text-[10px] font-bold rounded uppercase tracking-widest border border-white/10 ${project.status === 'DATA_REQUIRED' ? 'text-[var(--brand-accent)]' : 'text-[var(--brand-primary)]'}`}>
+            {project.status === 'DATA_REQUIRED' ? 'In Development' : project.status}
+          </span>
           {project.featured && (
-            <span className="text-[var(--brand-secondary)] text-xs font-bold uppercase tracking-widest bg-black/50 px-2 py-1 rounded-md border border-[var(--brand-secondary)]/30 backdrop-blur-md">
+            <span className="text-[var(--brand-secondary)] text-[10px] font-bold uppercase tracking-widest bg-black/50 px-2 py-1 rounded border border-[var(--brand-secondary)]/30 backdrop-blur-md">
               Featured
             </span>
           )}
         </div>
         
-        <h3 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-white mb-2 drop-shadow-2xl">
+        <h3 className="text-2xl md:text-3xl font-display font-bold text-white mb-3 drop-shadow-2xl">
           {project.title}
         </h3>
         
-        <p className="text-gray-300 mb-6 max-w-2xl line-clamp-2 md:line-clamp-3 text-sm md:text-base font-medium opacity-100 sm:opacity-0 sm:translate-y-4 sm:group-hover:opacity-100 sm:group-hover:translate-y-0 transition-all duration-500 delay-100 drop-shadow-md">
+        <p className="text-gray-300 mb-5 line-clamp-2 text-sm font-medium opacity-100 sm:opacity-0 sm:translate-y-4 sm:group-hover:opacity-100 sm:group-hover:translate-y-0 transition-all duration-500 delay-100 drop-shadow-md">
           {project.tagline}
         </p>
         
         <div className="flex flex-wrap gap-2 opacity-100 sm:opacity-0 sm:translate-y-4 sm:group-hover:opacity-100 sm:group-hover:translate-y-0 transition-all duration-500 delay-200">
-          {project.technologies.slice(0, 5).map((tech) => (
+          {project.technologies.slice(0, 3).map((tech) => (
             <span
               key={tech}
-              className="px-2 py-1 bg-white/10 backdrop-blur-md border border-white/20 rounded text-xs font-bold text-white tracking-wider uppercase"
+              className="px-2 py-1 bg-white/10 backdrop-blur-md border border-white/20 rounded text-[10px] font-bold text-white tracking-wider uppercase whitespace-nowrap"
             >
               {tech}
             </span>
           ))}
-          {project.technologies.length > 5 && (
-            <span className="px-2 py-1 bg-white/10 backdrop-blur-md border border-white/20 rounded text-xs font-bold text-white tracking-wider uppercase">
-              +{project.technologies.length - 5}
+          {project.technologies.length > 3 && (
+            <span className="px-2 py-1 bg-white/10 backdrop-blur-md border border-white/20 rounded text-[10px] font-bold text-white tracking-wider uppercase whitespace-nowrap">
+              +{project.technologies.length - 3}
             </span>
           )}
         </div>

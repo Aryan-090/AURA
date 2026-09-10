@@ -66,7 +66,7 @@ export function AIWorkflow() {
               
               {/* Node Label */}
               <div 
-                className={`absolute top-16 text-center w-32 -ml-10 transition-colors duration-300 ${
+                className={`absolute top-16 left-1/2 -translate-x-1/2 text-center w-max transition-colors duration-300 ${
                   isActive ? 'text-[var(--brand-accent)] font-bold' : 'text-[var(--text-secondary)] font-medium group-hover:text-[var(--text-primary)]'
                 }`}
               >
