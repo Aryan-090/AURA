@@ -12,7 +12,7 @@ export default function AILab() {
       
       {/* Background ambient lighting */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-0 right-0 w-[60vw] h-[60vw] bg-[radial-gradient(circle_at_center,var(--brand-accent)_0%,transparent_50%)] opacity-10 mix-blend-screen blur-[100px]"></div>
+        <div className="absolute top-0 right-0 w-[60vw] h-[60vw] bg-[radial-gradient(circle_at_center,var(--brand-accent)_0%,transparent_50%)] opacity-10 transform-gpu"></div>
       </div>
 
       <div className="container mx-auto px-4 max-w-7xl relative z-10">

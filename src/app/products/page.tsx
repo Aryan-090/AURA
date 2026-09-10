@@ -15,7 +15,7 @@ export default function ProductLab() {
       
       {/* Background ambient lighting */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-[20%] left-1/2 -translate-x-1/2 w-[80vw] h-[80vw] max-w-[800px] max-h-[800px] bg-[radial-gradient(circle_at_center,var(--brand-primary)_0%,transparent_50%)] opacity-5 mix-blend-screen blur-[120px]"></div>
+        <div className="absolute top-[20%] left-1/2 -translate-x-1/2 w-[80vw] h-[80vw] max-w-[800px] max-h-[800px] bg-[radial-gradient(circle_at_center,var(--brand-primary)_0%,transparent_50%)] opacity-5 transform-gpu"></div>
       </div>
 
       <div className="container mx-auto px-4 max-w-7xl relative z-10">

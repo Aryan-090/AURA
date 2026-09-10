@@ -82,7 +82,7 @@ export function AIWorkflow() {
         <div className="glass-02 p-8 md:p-12 rounded-3xl min-h-[250px] flex flex-col justify-center relative overflow-hidden border border-[var(--brand-accent)]/20 shadow-2xl">
           
           {/* Subtle Background Glow based on active step */}
-          <div className="absolute top-0 right-0 w-64 h-64 bg-[var(--brand-accent)] opacity-5 blur-[80px] pointer-events-none transition-all duration-1000"></div>
+          <div className="absolute top-0 right-0 w-64 h-64 bg-[var(--brand-accent)] opacity-5 pointer-events-none transition-all duration-1000"></div>
 
           {/* Mobile Step Indicator */}
           <div className="md:hidden flex items-center justify-between mb-6 border-b border-[var(--border-color)] pb-4">

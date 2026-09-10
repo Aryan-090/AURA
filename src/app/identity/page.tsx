@@ -11,7 +11,7 @@ export default function IdentityLab() {
     <div className="relative w-full min-h-screen overflow-hidden py-24 md:py-32">
       
       {/* Background ambient lighting */}
-      <div className="absolute top-0 right-0 w-[50vw] h-[50vw] bg-[radial-gradient(ellipse_at_center,var(--brand-primary)_0%,transparent_60%)] opacity-10 blur-[100px] pointer-events-none"></div>
+      <div className="absolute top-0 right-0 w-[50vw] h-[50vw] bg-[radial-gradient(ellipse_at_center,var(--brand-primary)_0%,transparent_60%)] opacity-10 pointer-events-none"></div>
 
       <div className="container mx-auto px-4 lg:px-8 max-w-7xl relative z-10">
         

@@ -72,7 +72,7 @@ export default async function ProjectCaseStudy({ params }: PageProps) {
       <section className="relative w-full h-[60vh] min-h-[500px] flex items-end pb-16 pt-32 overflow-hidden border-b border-[var(--border-color)]">
         {/* Cinematic Background */}
         <div className="absolute inset-0 bg-[var(--bg-primary)] z-0">
-          <div className="absolute inset-0 bg-gradient-to-br from-[var(--brand-primary)]/20 to-[var(--bg-primary)] mix-blend-screen"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-[var(--brand-primary)]/20 to-[var(--bg-primary)] transform-gpu"></div>
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,var(--brand-secondary)_0%,transparent_60%)] opacity-20"></div>
           {/* Scanlines / Grid overlay */}
           <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:60px_60px]"></div>

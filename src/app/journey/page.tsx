@@ -21,7 +21,7 @@ export default function JourneyLab() {
       
       {/* Background ambient lighting */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-[20%] left-[10%] w-[60vw] h-[60vw] bg-[radial-gradient(circle_at_center,var(--brand-primary)_0%,transparent_50%)] opacity-10 mix-blend-screen blur-[100px]"></div>
+        <div className="absolute top-[20%] left-[10%] w-[60vw] h-[60vw] bg-[radial-gradient(circle_at_center,var(--brand-primary)_0%,transparent_50%)] opacity-10 transform-gpu"></div>
       </div>
 
       <div className="container mx-auto px-4 max-w-5xl relative z-10">

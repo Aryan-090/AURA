@@ -23,7 +23,6 @@ export const metadata: Metadata = {
 import { AnalyticsWrapper } from "@/components/analytics-wrapper";
 import { PageTransition } from "@/components/motion/page-transition";
 import { Atmosphere } from "@/components/layout/atmosphere";
-import { CustomCursor } from "@/components/ui/custom-cursor";
 import { AuraLoadingSequence } from "@/components/ui/aura-loading-sequence";
 
 export default function RootLayout({
@@ -42,7 +41,6 @@ export default function RootLayout({
         >
           <AuraLoadingSequence />
           <Atmosphere />
-          <CustomCursor />
           <AnalyticsWrapper />
           <AuraNavigation />
           <main className="flex-grow flex flex-col z-0">

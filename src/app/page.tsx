@@ -68,25 +68,25 @@ export default function ArrivalPage() {
           </div>
         </div>
 
-        {/* FLOATING MICRO-PANELS (Desktop Only) */}
+        {/* FLOATING MICRO-PANELS (Desktop Only) - Optimized for Scroll Performance */}
         <div className="hidden lg:block absolute z-10 pointer-events-none w-full h-full inset-0 max-w-7xl mx-auto">
           {/* Panel 1 */}
-          <div className="absolute top-[20%] left-[5%] glass-03 p-4 rounded-xl border-l-2 border-l-[var(--brand-primary)] w-48 animate-float shadow-2xl backdrop-blur-md">
+          <div className="absolute top-[20%] left-[5%] bg-[var(--bg-surface)]/90 border border-[var(--border-color)] p-4 rounded-xl border-l-2 border-l-[var(--brand-primary)] w-48 animate-float shadow-xl">
             <span className="text-label text-[var(--brand-primary)] mb-1 block">01 / MOBILE</span>
             <span className="text-sm font-medium text-[var(--text-primary)]">Flutter & Dart</span>
           </div>
           {/* Panel 2 */}
-          <div className="absolute bottom-[25%] left-[10%] glass-03 p-4 rounded-xl border-l-2 border-l-[var(--brand-secondary)] w-48 animate-float [animation-delay:1s] shadow-2xl backdrop-blur-md">
+          <div className="absolute bottom-[25%] left-[10%] bg-[var(--bg-surface)]/90 border border-[var(--border-color)] p-4 rounded-xl border-l-2 border-l-[var(--brand-secondary)] w-48 animate-float [animation-delay:1s] shadow-xl">
             <span className="text-label text-[var(--brand-secondary)] mb-1 block">02 / PRODUCT</span>
             <span className="text-sm font-medium text-[var(--text-primary)]">Real-world systems</span>
           </div>
           {/* Panel 3 */}
-          <div className="absolute top-[30%] right-[5%] glass-03 p-4 rounded-xl border-l-2 border-l-[var(--brand-accent)] w-48 animate-float [animation-delay:0.5s] shadow-2xl backdrop-blur-md">
+          <div className="absolute top-[30%] right-[5%] bg-[var(--bg-surface)]/90 border border-[var(--border-color)] p-4 rounded-xl border-l-2 border-l-[var(--brand-accent)] w-48 animate-float [animation-delay:0.5s] shadow-xl">
             <span className="text-label text-[var(--brand-accent)] mb-1 block">03 / AI</span>
             <span className="text-sm font-medium text-[var(--text-primary)]">AI-assisted engineering</span>
           </div>
           {/* Panel 4 */}
-          <div className="absolute bottom-[20%] right-[10%] glass-03 p-4 rounded-xl border-l-2 border-l-[var(--text-primary)] w-48 animate-float [animation-delay:1.5s] shadow-2xl backdrop-blur-md">
+          <div className="absolute bottom-[20%] right-[10%] bg-[var(--bg-surface)]/90 border border-[var(--border-color)] p-4 rounded-xl border-l-2 border-l-[var(--text-primary)] w-48 animate-float [animation-delay:1.5s] shadow-xl">
             <span className="text-label text-[var(--text-primary)] mb-1 block">04 / EXPLORING</span>
             <span className="text-sm font-medium text-[var(--text-secondary)]">Backend & Cloud</span>
           </div>

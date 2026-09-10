@@ -10,12 +10,12 @@ import { TrackedLink } from "@/components/ui/tracked-link";
 import { motion, AnimatePresence, useScroll, useMotionValueEvent } from "framer-motion";
 
 const navLinks = [
-  { href: "/identity", label: "01 / Identity" },
-  { href: "/journey", label: "02 / Journey" },
-  { href: "/engineering", label: "03 / Engineering" },
-  { href: "/products", label: "04 / Products" },
-  { href: "/ai", label: "05 / AI Lab" },
-  { href: "/innovation", label: "06 / Innovation" },
+  { href: "/identity", label: "Identity" },
+  { href: "/journey", label: "Journey" },
+  { href: "/engineering", label: "Engineering" },
+  { href: "/products", label: "Products" },
+  { href: "/ai", label: "AI Lab" },
+  { href: "/innovation", label: "Innovation" },
 ];
 
 export function AuraNavigation() {
@@ -61,12 +61,12 @@ export function AuraNavigation() {
         transition={{ duration: 0.35, ease: "easeInOut" }}
         className="fixed top-4 left-1/2 -translate-x-1/2 w-[95%] max-w-7xl z-50 rounded-2xl glass-02 shadow-lg"
       >
-        <div className="px-6 flex h-16 items-center justify-between">
-          <Link href="/" className="font-display font-bold text-2xl text-[var(--text-primary)] tracking-tight hover:glow-text transition-all">
+        <div className="px-4 lg:px-6 flex h-16 items-center justify-between gap-4">
+          <Link href="/" className="font-display font-bold text-2xl text-[var(--text-primary)] tracking-tight hover:glow-text transition-all shrink-0 mr-4 xl:mr-8">
             AURA
           </Link>
           
-          <nav className="hidden lg:flex items-center gap-8">
+          <nav className="hidden lg:flex items-center gap-4 xl:gap-8">
             {navLinks.map((link) => {
               const isActive = pathname?.startsWith(link.href);
               return (
@@ -136,7 +136,7 @@ export function AuraNavigation() {
             className="fixed inset-0 z-40 bg-[var(--bg-primary)]/90 flex flex-col justify-center px-6"
           >
             {/* Atmospheric light inside mobile menu */}
-            <div className="absolute top-1/4 left-0 w-full h-1/2 bg-[radial-gradient(ellipse_at_center,var(--brand-primary)_0%,transparent_70%)] opacity-20 mix-blend-screen pointer-events-none blur-[50px]"></div>
+            <div className="absolute top-1/4 left-0 w-full h-1/2 bg-[radial-gradient(ellipse_at_center,var(--brand-primary)_0%,transparent_70%)] opacity-20 transform-gpu pointer-events-none"></div>
 
             <nav className="flex flex-col gap-6 relative z-10">
               {navLinks.map((link, index) => {

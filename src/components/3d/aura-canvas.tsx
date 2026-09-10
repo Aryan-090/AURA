@@ -100,6 +100,10 @@ export function AuraCanvas() {
   const [mounted, setMounted] = React.useState(false);
   const [isMobile, setIsMobile] = React.useState(false);
   const [isHovered, setIsHovered] = React.useState(false);
+  const containerRef = React.useRef<HTMLDivElement>(null);
+  
+  // Only render 3D when actually visible on screen to save massive GPU cycles during scroll
+  const [isVisible, setIsVisible] = React.useState(true);
 
   React.useEffect(() => {
     setMounted(true);
@@ -108,7 +112,23 @@ export function AuraCanvas() {
     };
     checkMobile();
     window.addEventListener("resize", checkMobile);
-    return () => window.removeEventListener("resize", checkMobile);
+    
+    // Intersection Observer to pause rendering
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsVisible(entry.isIntersecting);
+      },
+      { rootMargin: "200px" } // Keep rendering slightly before it comes into view
+    );
+    
+    if (containerRef.current) {
+      observer.observe(containerRef.current);
+    }
+    
+    return () => {
+      window.removeEventListener("resize", checkMobile);
+      observer.disconnect();
+    };
   }, []);
 
   if (!mounted) return null;
@@ -125,16 +145,21 @@ export function AuraCanvas() {
 
   return (
     <div 
+      ref={containerRef}
       className="w-full h-full min-h-[600px] absolute inset-0 z-0 pointer-events-auto"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <Canvas camera={{ position: [0, 0, 6], fov: 45 }} dpr={[1, 2]} gl={{ antialias: false }}>
-        <ambientLight intensity={0.2} />
-        <spotLight position={[5, 5, 5]} angle={0.15} penumbra={1} intensity={1} color="#9B5CFF" />
-        <pointLight position={[-5, -5, -5]} intensity={0.5} color="#00F0FF" />
-        <CoreObject isHovered={isHovered} />
-        <ParticleField />
+      <Canvas camera={{ position: [0, 0, 6], fov: 45 }} dpr={[1, 1.5]} gl={{ antialias: false, powerPreference: "high-performance" }}>
+        {isVisible && (
+          <>
+            <ambientLight intensity={0.2} />
+            <spotLight position={[5, 5, 5]} angle={0.15} penumbra={1} intensity={1} color="#9B5CFF" />
+            <pointLight position={[-5, -5, -5]} intensity={0.5} color="#00F0FF" />
+            <CoreObject isHovered={isHovered} />
+            <ParticleField />
+          </>
+        )}
       </Canvas>
     </div>
   );

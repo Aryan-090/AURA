@@ -24,7 +24,7 @@ export default function EngineeringLab() {
       
       {/* Background ambient lighting */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-        <div className="w-[80vw] h-[80vw] max-w-[800px] max-h-[800px] bg-[radial-gradient(circle_at_center,var(--brand-primary)_0%,transparent_60%)] opacity-5 mix-blend-screen blur-[100px]"></div>
+        <div className="w-[80vw] h-[80vw] max-w-[800px] max-h-[800px] bg-[radial-gradient(circle_at_center,var(--brand-primary)_0%,transparent_60%)] opacity-5 transform-gpu"></div>
       </div>
 
       <div className="container mx-auto px-4 lg:px-8 max-w-7xl relative z-10">

@@ -39,7 +39,7 @@ export function AuraLoadingSequence() {
             initial={{ scale: 0, opacity: 0 }}
             animate={{ scale: 1, opacity: 0.15 }}
             transition={{ duration: 2, ease: "easeOut" }}
-            className="absolute w-[60vw] h-[60vw] max-w-[800px] max-h-[800px] bg-[radial-gradient(circle_at_center,var(--brand-primary)_0%,transparent_70%)] mix-blend-screen blur-[100px]"
+            className="absolute w-[60vw] h-[60vw] max-w-[800px] max-h-[800px] bg-[radial-gradient(circle_at_center,var(--brand-primary)_0%,transparent_70%)] transform-gpu"
           />
 
           <div className="relative z-10 flex flex-col items-center">
