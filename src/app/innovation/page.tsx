@@ -76,14 +76,14 @@ export default function InnovationLab() {
             return (
               <div 
                 key={horizon.id}
-                className="absolute z-10 transition-all duration-500"
-                style={{ ...horizon.position, zIndex: isActive ? 50 : 10 }}
+                className={`absolute transition-all duration-500 ${isActive ? 'z-50' : 'z-10'}`}
+                style={horizon.position}
                 onMouseEnter={() => setActiveHorizon(horizon.id)}
                 onMouseLeave={() => setActiveHorizon(null)}
               >
                 <motion.div 
                   layout
-                  className={`glass-03 rounded-3xl p-8 border-t-4 transition-all duration-300 shadow-2xl cursor-pointer ${isActive ? 'w-96 glass-04 scale-105' : 'w-64 glass-02 scale-100'}`}
+                  className={`relative glass-03 rounded-3xl p-8 border-t-4 transition-all duration-300 shadow-2xl cursor-pointer ${isActive ? 'w-96 glass-04 scale-105 z-50' : 'w-64 glass-02 scale-100 z-10'}`}
                   style={{ borderTopColor: horizon.color }}
                 >
                   <motion.h2 layout="position" className="text-3xl font-display font-bold text-[var(--text-primary)] mb-1">
