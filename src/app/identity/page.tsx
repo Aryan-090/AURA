@@ -8,63 +8,84 @@ export const metadata = {
 
 export default function IdentityLab() {
   return (
-    <div className="container mx-auto px-4 py-16">
-      <header className="mb-16 max-w-3xl">
-        <h1 className="font-display text-4xl sm:text-5xl font-bold text-[var(--brand-primary)] mb-6">
-          Identity Lab
-        </h1>
-        <p className="text-xl text-[var(--text-secondary)] leading-relaxed">
-          {profileData.identity.positioning}
-        </p>
-      </header>
+    <div className="relative w-full min-h-screen overflow-hidden py-24 md:py-32">
+      
+      {/* Background ambient lighting */}
+      <div className="absolute top-0 right-0 w-[50vw] h-[50vw] bg-[radial-gradient(ellipse_at_center,var(--brand-primary)_0%,transparent_60%)] opacity-10 blur-[100px] pointer-events-none"></div>
 
-      <section className="mb-16">
-        <h2 className="text-3xl font-bold mb-6 text-[var(--text-primary)]">Who is Aryan?</h2>
-        <TiltCard>
-          <div className="glass-panel p-8 rounded-2xl">
-            <p className="text-[var(--text-muted)] text-lg leading-relaxed">
+      <div className="container mx-auto px-4 lg:px-8 max-w-7xl relative z-10">
+        
+        {/* Section Header */}
+        <header className="mb-32">
+          <span className="text-label text-[var(--brand-secondary)] mb-4 block">01 / IDENTITY LAB</span>
+          <h1 className="text-display-xl text-[var(--text-primary)] max-w-4xl">
+            Who is <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--brand-primary)] to-[var(--brand-secondary)]">Aryan?</span>
+          </h1>
+        </header>
+
+        {/* Editorial Statement */}
+        <section className="relative mb-40">
+          <div className="max-w-4xl">
+            <h2 className="text-display-l text-[var(--text-primary)] leading-tight mb-8">
+              {profileData.philosophy}
+            </h2>
+            <p className="text-body-lg text-[var(--text-secondary)] max-w-2xl border-l-2 border-[var(--brand-primary)] pl-6">
               {profileData.introduction}
             </p>
           </div>
-        </TiltCard>
-      </section>
+          
+          {/* Floating Metadata (Desktop Spatial Layout) */}
+          <div className="hidden lg:flex flex-col absolute top-0 right-0 gap-4 w-64">
+            <div className="glass-02 p-6 rounded-2xl border-l-2 border-[var(--brand-primary)] shadow-2xl">
+              <span className="text-label text-[var(--brand-primary)] mb-2 block">ROLE</span>
+              <span className="text-[var(--text-primary)] font-medium">Flutter Developer</span>
+            </div>
+            <div className="glass-02 p-6 rounded-2xl border-l-2 border-[var(--brand-secondary)] shadow-2xl translate-x-8">
+              <span className="text-label text-[var(--brand-secondary)] mb-2 block">FOCUS</span>
+              <span className="text-[var(--text-primary)] font-medium">Product Builder</span>
+            </div>
+            <div className="glass-02 p-6 rounded-2xl border-l-2 border-[var(--brand-accent)] shadow-2xl translate-x-16">
+              <span className="text-label text-[var(--brand-accent)] mb-2 block">EXPLORING</span>
+              <span className="text-[var(--text-primary)] font-medium">AI & Architecture</span>
+            </div>
+          </div>
+        </section>
 
-      <section className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-        <TiltCard className="h-full">
-          <div className="glass-panel p-8 rounded-2xl border-t-4 border-[var(--brand-primary)] h-full">
-            <h2 className="text-2xl font-semibold mb-4 text-[var(--text-primary)]">Philosophy</h2>
-            <p className="text-[var(--brand-secondary)] text-xl font-medium mb-4">
-              {profileData.philosophy}
-            </p>
-            <p className="text-[var(--text-muted)] leading-relaxed">
+        {/* Beliefs & Work Ethic */}
+        <section className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 mb-32">
+          <div className="lg:col-span-5 flex flex-col justify-center">
+            <span className="text-label text-[var(--text-muted)] mb-4 block">CORE BELIEF</span>
+            <p className="text-display-m text-[var(--text-primary)]">
               {profileData.belief}
             </p>
           </div>
-        </TiltCard>
-        
-        <TiltCard className="h-full">
-          <div className="glass-panel p-8 rounded-2xl border-t-4 border-[var(--brand-secondary)] h-full">
-            <h2 className="text-2xl font-semibold mb-4 text-[var(--text-primary)]">Work Ethic</h2>
-            <p className="text-[var(--text-muted)] leading-relaxed italic border-l-2 border-[var(--text-muted)] pl-4">
-              &quot;{profileData.workEthic}&quot;
-            </p>
-          </div>
-        </TiltCard>
-      </section>
-
-      <section>
-        <h2 className="text-3xl font-bold mb-6 text-[var(--text-primary)]">Engineering Strengths</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          {profileData.strengths.map((strength, index) => (
-            <TiltCard key={index}>
-              <div className="glass-panel p-6 rounded-xl flex items-center space-x-4 h-full">
-                <div className="w-2 h-2 rounded-full bg-[var(--brand-primary)] shrink-0"></div>
-                <span className="text-[var(--text-secondary)] font-medium">{strength}</span>
+          
+          <div className="lg:col-span-7">
+            <TiltCard>
+              <div className="glass-03 p-8 md:p-12 rounded-3xl relative overflow-hidden group">
+                <div className="absolute inset-0 bg-gradient-to-br from-[var(--brand-primary)]/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <span className="text-label text-[var(--brand-secondary)] mb-4 block relative z-10">WORK ETHIC</span>
+                <p className="text-2xl md:text-3xl font-light text-[var(--text-primary)] leading-relaxed italic relative z-10">
+                  &quot;{profileData.workEthic}&quot;
+                </p>
               </div>
             </TiltCard>
-          ))}
-        </div>
-      </section>
+          </div>
+        </section>
+
+        {/* Engineering Strengths */}
+        <section>
+          <span className="text-label text-[var(--brand-primary)] mb-8 block">ENGINEERING STRENGTHS</span>
+          <div className="flex flex-wrap gap-4">
+            {profileData.strengths.map((strength, index) => (
+              <div key={index} className="glass-01 px-6 py-4 rounded-full border border-[var(--border-color)] hover:border-[var(--brand-primary)] transition-colors flex items-center gap-3 group">
+                <span className="w-1.5 h-1.5 rounded-full bg-[var(--text-muted)] group-hover:bg-[var(--brand-primary)] transition-colors"></span>
+                <span className="text-[var(--text-primary)] font-medium tracking-wide">{strength}</span>
+              </div>
+            ))}
+          </div>
+        </section>
+      </div>
     </div>
   );
 }

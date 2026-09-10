@@ -11,31 +11,102 @@ export default function ArrivalPage() {
     <div className="flex flex-col w-full overflow-hidden">
       
       {/* 1. ARRIVAL / HERO */}
-      <section className="relative flex flex-col items-center justify-center min-h-[calc(100vh-4rem)] p-4 text-center">
-        <div className="absolute inset-0 z-0 flex items-center justify-center opacity-40 pointer-events-none">
-          <div className="w-full h-full max-w-4xl max-h-4xl">
-            <AuraCanvas />
-          </div>
+      <section className="relative flex flex-col items-center justify-center min-h-screen p-4 text-center overflow-hidden">
+        
+        {/* AURA CORE 3D SCENE */}
+        <div className="absolute inset-0 z-0 flex items-center justify-center pointer-events-none">
+          <AuraCanvas />
         </div>
-        <div className="relative z-10 max-w-5xl space-y-8 animate-fade-in-up bg-[var(--bg-primary)]/40 p-8 md:p-12 rounded-3xl backdrop-blur-sm border border-[var(--border-color)]/50">
-          <h1 className="font-display text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight text-[var(--brand-primary)]">
-            Engineering Better Digital Experiences.
-          </h1>
-          <p className="text-xl sm:text-2xl text-[var(--text-secondary)] font-light max-w-3xl mx-auto leading-relaxed">
-            I am a Flutter developer and product-oriented software engineer. I build practical products, 
-            continuously learn new paradigms, and explore web, AI, and backend engineering.
-          </p>
-          <div className="flex flex-wrap justify-center gap-4 pt-8">
+
+        {/* HERO UI LAYER */}
+        <div className="relative z-10 w-full max-w-7xl mx-auto flex flex-col items-center justify-center min-h-[80vh] mt-16 lg:mt-0">
+          
+          {/* System Status Indicator */}
+          <div className="mb-8 flex items-center gap-3 px-4 py-2 glass-01 rounded-full border border-[var(--brand-primary)]/30 animate-fade-in-up">
+            <span className="w-2 h-2 rounded-full bg-[var(--brand-secondary)] animate-pulse shadow-[0_0_10px_var(--brand-secondary)]"></span>
+            <span className="text-label text-[var(--text-secondary)]">SYSTEM ONLINE</span>
+            <span className="mx-2 text-[var(--border-color)]">|</span>
+            <span className="text-label text-[var(--brand-primary)]">AURA v2.0</span>
+          </div>
+
+          {/* Massive Typography */}
+          <div className="space-y-2 mb-8 animate-fade-in-up [animation-delay:100ms]">
+            <h1 className="text-display-xl text-[var(--text-primary)]">
+              Engineering Better
+            </h1>
+            <h1 className="text-display-xl bg-clip-text text-transparent bg-gradient-to-r from-[var(--brand-primary)] to-[var(--brand-secondary)] pb-2 glow-text">
+              Digital Experiences.
+            </h1>
+          </div>
+
+          {/* Concise Messaging */}
+          <div className="mb-12 max-w-2xl mx-auto space-y-6 animate-fade-in-up [animation-delay:200ms]">
+            <div className="flex flex-wrap justify-center gap-3 sm:gap-6 text-body-lg font-medium text-[var(--text-primary)]">
+              <span>Flutter Developer</span>
+              <span className="text-[var(--brand-primary)]">•</span>
+              <span>Product Builder</span>
+              <span className="text-[var(--brand-primary)]">•</span>
+              <span>AI Explorer</span>
+            </div>
+            <p className="text-body text-[var(--text-secondary)]">
+              Building practical digital products while continuously evolving across mobile, web, backend, and AI.
+            </p>
+          </div>
+
+          {/* Premium Buttons */}
+          <div className="flex flex-wrap justify-center gap-4 pt-4 animate-fade-in-up [animation-delay:300ms]">
             <Link href="/products">
-              <Button size="lg" className="text-lg px-8">View Products</Button>
+              <Button size="lg" className="text-lg px-8 py-6 rounded-xl bg-gradient-to-r from-[var(--brand-primary)] to-[var(--brand-secondary)] hover:opacity-90 shadow-[0_0_30px_rgba(112,0,255,0.3)] transition-all">
+                Explore My Work
+              </Button>
             </Link>
-            <Link href="/connect">
-              <Button variant="secondary" size="lg" className="text-lg px-8">Connect</Button>
+            <Link href="/identity">
+              <Button variant="outline" size="lg" className="text-lg px-8 py-6 rounded-xl glass-01 border-[var(--border-color)] hover:border-[var(--brand-primary)] hover:bg-[var(--brand-primary)]/10 transition-all text-[var(--text-primary)]">
+                Enter AURA
+              </Button>
             </Link>
           </div>
         </div>
-        <div className="absolute bottom-12 animate-bounce hidden sm:block text-[var(--text-muted)] z-10">
-          <span className="text-sm tracking-widest uppercase font-medium">Scroll to Explore</span>
+
+        {/* FLOATING MICRO-PANELS (Desktop Only) */}
+        <div className="hidden lg:block absolute z-10 pointer-events-none w-full h-full inset-0 max-w-7xl mx-auto">
+          {/* Panel 1 */}
+          <div className="absolute top-[20%] left-[5%] glass-03 p-4 rounded-xl border-l-2 border-l-[var(--brand-primary)] w-48 animate-float shadow-2xl backdrop-blur-md">
+            <span className="text-label text-[var(--brand-primary)] mb-1 block">01 / MOBILE</span>
+            <span className="text-sm font-medium text-[var(--text-primary)]">Flutter & Dart</span>
+          </div>
+          {/* Panel 2 */}
+          <div className="absolute bottom-[25%] left-[10%] glass-03 p-4 rounded-xl border-l-2 border-l-[var(--brand-secondary)] w-48 animate-float [animation-delay:1s] shadow-2xl backdrop-blur-md">
+            <span className="text-label text-[var(--brand-secondary)] mb-1 block">02 / PRODUCT</span>
+            <span className="text-sm font-medium text-[var(--text-primary)]">Real-world systems</span>
+          </div>
+          {/* Panel 3 */}
+          <div className="absolute top-[30%] right-[5%] glass-03 p-4 rounded-xl border-l-2 border-l-[var(--brand-accent)] w-48 animate-float [animation-delay:0.5s] shadow-2xl backdrop-blur-md">
+            <span className="text-label text-[var(--brand-accent)] mb-1 block">03 / AI</span>
+            <span className="text-sm font-medium text-[var(--text-primary)]">AI-assisted engineering</span>
+          </div>
+          {/* Panel 4 */}
+          <div className="absolute bottom-[20%] right-[10%] glass-03 p-4 rounded-xl border-l-2 border-l-[var(--text-primary)] w-48 animate-float [animation-delay:1.5s] shadow-2xl backdrop-blur-md">
+            <span className="text-label text-[var(--text-primary)] mb-1 block">04 / EXPLORING</span>
+            <span className="text-sm font-medium text-[var(--text-secondary)]">Backend & Cloud</span>
+          </div>
+        </div>
+
+        {/* MOBILE MICRO-PANELS STRIP */}
+        <div className="lg:hidden relative z-10 w-full px-4 mt-12 mb-8">
+          <div className="flex overflow-x-auto pb-4 gap-4 snap-x hide-scrollbar">
+            {['MOBILE: Flutter', 'PRODUCT: Systems', 'AI: Engineering', 'EXPLORE: Backend'].map((text, i) => (
+              <div key={i} className="shrink-0 snap-center glass-02 px-4 py-3 rounded-lg border border-[var(--border-color)] text-xs font-bold tracking-wider text-[var(--text-primary)]">
+                0{i+1} / {text}
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Scroll Indicator */}
+        <div className="absolute bottom-8 animate-bounce text-[var(--text-muted)] z-10 hidden md:flex flex-col items-center gap-2">
+          <span className="text-[10px] tracking-widest uppercase font-bold text-[var(--brand-primary)]">Scroll Sequence</span>
+          <div className="w-[1px] h-8 bg-gradient-to-b from-[var(--brand-primary)] to-transparent"></div>
         </div>
       </section>
 

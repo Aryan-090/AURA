@@ -2,15 +2,16 @@
 
 @theme {
   --color-aura-purple: #7000FF;
-  --color-aura-purple-light: #9040FF;
+  --color-aura-purple-light: #9B5CFF; /* Electric Violet */
   --color-aura-purple-dark: #4A00B3;
-  --color-aura-cyan: #00F0FF;
+  --color-aura-cyan: #00F0FF; /* Electric Cyan */
   --color-aura-cyan-dark: #00A3CC;
+  --color-aura-blue: #5B8CFF; /* Soft Blue */
 
-  /* Violet-tinted Neutrals for Dark Mode (default for AURA) */
-  --color-aura-bg-dark: #07030F;
-  --color-aura-surface-dark: #100720;
-  --color-aura-border-dark: #26134A;
+  /* Violet-tinted Neutrals for Dark Mode (Deep Space) */
+  --color-aura-bg-dark: #05030A;
+  --color-aura-surface-dark: #0B0618;
+  --color-aura-border-dark: #1F1533;
 
   /* Violet-tinted Neutrals for Light Mode */
   --color-aura-bg-light: #F9F7FC;
@@ -47,18 +48,20 @@
     
     --brand-primary: var(--color-aura-purple);
     --brand-secondary: var(--color-aura-purple-light);
+    --brand-accent: var(--color-aura-cyan-dark);
   }
 
   .dark {
     --bg-primary: var(--color-aura-bg-dark);
     --bg-surface: var(--color-aura-surface-dark);
     --border-color: var(--color-aura-border-dark);
-    --text-primary: #F4F1F9;
+    --text-primary: #F7F5FF;
     --text-secondary: #BCAED6;
-    --text-muted: #7E6C99;
+    --text-muted: #9C93AE;
     
     --brand-primary: var(--color-aura-purple-light);
     --brand-secondary: var(--color-aura-cyan);
+    --brand-accent: var(--color-aura-blue);
   }
 
   * {
@@ -75,9 +78,101 @@
   }
 }
 
-/* Glassmorphism Utilities */
+/* 
+ * AURA DESIGN SYSTEM
+ * Phase 1: Foundation
+ */
 @layer utilities {
+  
+  /* --- Typography Hierarchy --- */
+  .text-display-xl { @apply font-display text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight leading-tight; }
+  .text-display-l { @apply font-display text-4xl sm:text-5xl font-bold tracking-tight leading-tight; }
+  .text-display-m { @apply font-display text-3xl sm:text-4xl font-bold tracking-tight leading-snug; }
+  .text-heading { @apply font-display text-2xl font-semibold tracking-tight; }
+  .text-body-lg { @apply font-sans text-lg md:text-xl font-light leading-relaxed; }
+  .text-body { @apply font-sans text-base leading-relaxed; }
+  .text-label { @apply font-sans text-xs font-bold uppercase tracking-widest; }
+  .text-technical { @apply font-mono text-sm tracking-tight; }
+
+  /* --- Glass System --- */
+  
+  /* Glass 01: Light translucent panel (Cards) */
+  .glass-01 {
+    @apply bg-[var(--brand-primary)]/5 dark:bg-[var(--brand-primary)]/10 backdrop-blur-md border border-[var(--brand-primary)]/10 dark:border-[var(--brand-primary)]/20;
+  }
+  
+  /* Glass 02: Deep frosted panel (Background structures) */
+  .glass-02 {
+    @apply bg-[var(--bg-surface)]/80 dark:bg-[var(--bg-surface)]/60 backdrop-blur-2xl border border-[var(--border-color)]/50;
+  }
+
+  /* Glass 03: Premium highlighted panel (Interactive / Focus) */
+  .glass-03 {
+    @apply bg-gradient-to-br from-[var(--brand-primary)]/10 to-transparent dark:from-[var(--brand-primary)]/20 dark:to-transparent backdrop-blur-xl border border-[var(--brand-primary)]/30 dark:border-[var(--brand-primary)]/40 shadow-[0_8px_30px_rgba(112,0,255,0.08)] dark:shadow-[0_8px_30px_rgba(112,0,255,0.2)];
+  }
+
+  /* Glass 04: Hero floating glass (Highest elevation) */
+  .glass-04 {
+    @apply bg-white/40 dark:bg-black/40 backdrop-blur-3xl border border-white/20 dark:border-white/10 shadow-[0_20px_40px_rgba(0,0,0,0.1)] dark:shadow-[0_20px_40px_rgba(0,0,0,0.4)];
+  }
+
+  /* Legacy glass-panel alias to maintain existing component styling until refactored */
   .glass-panel {
-    @apply bg-[var(--brand-primary)]/5 dark:bg-[var(--brand-primary)]/10 backdrop-blur-xl border border-[var(--brand-primary)]/10 dark:border-[var(--brand-primary)]/20 shadow-[0_8px_30px_rgba(112,0,255,0.04)] dark:shadow-[0_8px_30px_rgba(112,0,255,0.12)];
+    @apply glass-01 shadow-sm;
+  }
+
+  /* --- Depth System --- */
+  .depth-0 { @apply z-0; } /* Page */
+  .depth-1 { @apply z-10; } /* Cards */
+  .depth-2 { @apply z-20 shadow-lg; } /* Floating cards */
+  .depth-3 { @apply z-30 shadow-xl; } /* Hero objects */
+  .depth-4 { @apply z-40 shadow-2xl; } /* Primary 3D scene / Modals */
+
+  /* --- Lighting System --- */
+  .light-radial-purple {
+    @apply bg-[radial-gradient(circle_at_center,var(--brand-primary)_0%,transparent_70%)];
+  }
+  .light-radial-cyan {
+    @apply bg-[radial-gradient(circle_at_center,var(--brand-secondary)_0%,transparent_70%)];
+  }
+  .light-rim {
+    @apply border-t border-l border-white/20 dark:border-white/10;
+  }
+  .glow-text {
+    text-shadow: 0 0 20px var(--brand-primary);
+  }
+
+  /* --- Atmosphere (Background) --- */
+  .bg-grid-pattern {
+    background-image: linear-gradient(to right, var(--border-color) 1px, transparent 1px),
+                      linear-gradient(to bottom, var(--border-color) 1px, transparent 1px);
+    background-size: 40px 40px;
+    opacity: 0.2;
+  }
+  
+  .bg-noise {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    opacity: 0.03;
+    pointer-events: none;
+  }
+
+  /* --- Animations --- */
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  .animate-fade-in-up {
+    animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    opacity: 0;
+  }
+  
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
   }
 }
