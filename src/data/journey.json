@@ -1,30 +1,86 @@
 [
   {
-    "id": "computer-science-degree",
-    "year": "2019",
-    "title": "B.S. Computer Science",
-    "description": "Graduated with honors, focusing on distributed systems and software architecture.",
+    "id": "college",
+    "year": "2022–2026",
+    "title": "Gyanmanjri Institute of Technology",
+    "description": "B.E. Information Technology. The beginning of the software development journey driven by curiosity and creation.",
     "category": "Education"
   },
   {
-    "id": "first-engineering-role",
-    "year": "2020",
-    "title": "Software Engineer at TechCorp",
-    "description": "Developed high-throughput microservices using Node.js and Go.",
-    "category": "Career"
+    "id": "programming-foundations",
+    "year": "Foundations",
+    "title": "Early Programming Exploration",
+    "description": "Started learning programming with a focus on understanding how applications are built and how technology solves real problems.",
+    "category": "Education"
   },
   {
-    "id": "senior-engineer-promotion",
-    "year": "2023",
-    "title": "Senior Frontend Engineer",
-    "description": "Led the migration of a monolithic SPA to a Next.js App Router architecture.",
-    "category": "Career"
+    "id": "c-html-css",
+    "year": "Early Learning",
+    "title": "C, HTML & CSS",
+    "description": "Explored core programming logic with C and basic web structure with HTML and CSS.",
+    "category": "Education"
   },
   {
-    "id": "aura-launch",
-    "year": "2026",
-    "title": "Launched AURA Platform",
-    "description": "Designed and built the AURA Digital Experience platform as a showcase of modern engineering.",
+    "id": "flutter-dart",
+    "year": "Mid-2025",
+    "title": "Flutter & Dart",
+    "description": "Flutter became a major focus for building cross-platform mobile applications.",
+    "category": "Education"
+  },
+  {
+    "id": "iot-exploration",
+    "year": "College Events",
+    "title": "IoT Exploration (Smart Farm & Smart Class)",
+    "description": "Explored the connection between software, hardware, and automation to solve real-world problems.",
     "category": "Achievement"
+  },
+  {
+    "id": "real-product-development",
+    "year": "Growth",
+    "title": "Real Product Development",
+    "description": "Began focusing on building practical, user-oriented applications rather than only academic experiments.",
+    "category": "Career"
+  },
+  {
+    "id": "excelsior-technologies",
+    "year": "02 February 2025",
+    "title": "Flutter Developer at Excelsior Technologies",
+    "description": "Joined Excelsior Technologies to develop new products and applications, gaining experience in production-ready software.",
+    "category": "Career"
+  },
+  {
+    "id": "influenex",
+    "year": "Ongoing",
+    "title": "InflueNex Development",
+    "description": "Working on an influencer marketing product designed to help digital creators and brands collaborate and grow together.",
+    "category": "Career"
+  },
+  {
+    "id": "ai-assisted-engineering",
+    "year": "Evolution",
+    "title": "AI-Assisted Engineering",
+    "description": "Adopted AI tools like Antigravity, Claude, and Copilot as engineering accelerators, focusing on architecture and deeper understanding.",
+    "category": "Achievement"
+  },
+  {
+    "id": "hackathon",
+    "year": "2026",
+    "title": "Excelsior AI Hackathon (FulFillX)",
+    "description": "Explored how AI-driven thinking and intelligent automation could be applied to a real-world fulfillment problem.",
+    "category": "Achievement"
+  },
+  {
+    "id": "aura",
+    "year": "Present",
+    "title": "AURA Digital Experience Platform",
+    "description": "Built AURA as a product demonstrating engineering philosophy, continuous evolution, and practical product thinking.",
+    "category": "Achievement"
+  },
+  {
+    "id": "future",
+    "year": "Future",
+    "title": "Future Product Engineering",
+    "description": "Evolving into a broader product-oriented software engineer, exploring backend systems, AI engineering, and building meaningful startups.",
+    "category": "Education"
   }
 ]

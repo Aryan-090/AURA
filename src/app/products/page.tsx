@@ -1,6 +1,6 @@
 import { Project } from "@/types";
 import projectsData from "@/data/projects.json";
-import { ProjectCard } from "@/components/projects/project-card";
+import { ProductFilter } from "@/components/features/product-filter";
 
 export const metadata = {
   title: "Product Lab | AURA",
@@ -12,20 +12,16 @@ export default function ProductLab() {
 
   return (
     <div className="container mx-auto px-4 py-16">
-      <header className="mb-16 text-center">
+      <header className="mb-16 text-center max-w-3xl mx-auto">
         <h1 className="font-display text-4xl sm:text-5xl font-bold text-[var(--brand-primary)] mb-4">
           Product Lab
         </h1>
-        <p className="text-xl text-[var(--text-secondary)]">
+        <p className="text-xl text-[var(--text-secondary)] leading-relaxed">
           Engineering products, open-source tools, and architectural case studies.
         </p>
       </header>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-        {projects.map((project) => (
-          <ProjectCard key={project.id} project={project} />
-        ))}
-      </div>
+      <ProductFilter projects={projects} />
     </div>
   );
 }

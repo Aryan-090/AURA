@@ -7,15 +7,15 @@
   --color-aura-cyan: #00F0FF;
   --color-aura-cyan-dark: #00A3CC;
 
-  /* Neutrals for Dark Mode (default for AURA) */
-  --color-aura-bg-dark: #05050A;
-  --color-aura-surface-dark: #0D0D14;
-  --color-aura-border-dark: #1F1F2E;
+  /* Violet-tinted Neutrals for Dark Mode (default for AURA) */
+  --color-aura-bg-dark: #07030F;
+  --color-aura-surface-dark: #100720;
+  --color-aura-border-dark: #26134A;
 
-  /* Neutrals for Light Mode */
-  --color-aura-bg-light: #FAFAFA;
+  /* Violet-tinted Neutrals for Light Mode */
+  --color-aura-bg-light: #F9F7FC;
   --color-aura-surface-light: #FFFFFF;
-  --color-aura-border-light: #E5E5E5;
+  --color-aura-border-light: #E4D9F2;
 
   /* Semantic */
   --color-success: #10B981;
@@ -24,7 +24,6 @@
   --color-info: #3B82F6;
 
   /* Font Families */
-  /* Assuming Inter/Space Grotesk or similar will be added via next/font in layout.tsx */
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
   --font-display: var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
@@ -42,21 +41,21 @@
     --bg-primary: var(--color-aura-bg-light);
     --bg-surface: var(--color-aura-surface-light);
     --border-color: var(--color-aura-border-light);
-    --text-primary: #111111;
-    --text-secondary: #555555;
-    --text-muted: #888888;
+    --text-primary: #1C1129;
+    --text-secondary: #56476B;
+    --text-muted: #8A7A9E;
     
     --brand-primary: var(--color-aura-purple);
-    --brand-secondary: var(--color-aura-cyan-dark);
+    --brand-secondary: var(--color-aura-purple-light);
   }
 
   .dark {
     --bg-primary: var(--color-aura-bg-dark);
     --bg-surface: var(--color-aura-surface-dark);
     --border-color: var(--color-aura-border-dark);
-    --text-primary: #EEEEEE;
-    --text-secondary: #AAAAAA;
-    --text-muted: #666666;
+    --text-primary: #F4F1F9;
+    --text-secondary: #BCAED6;
+    --text-muted: #7E6C99;
     
     --brand-primary: var(--color-aura-purple-light);
     --brand-secondary: var(--color-aura-cyan);
@@ -79,6 +78,6 @@
 /* Glassmorphism Utilities */
 @layer utilities {
   .glass-panel {
-    @apply bg-white/5 dark:bg-black/20 backdrop-blur-md border border-white/10 dark:border-white/5;
+    @apply bg-[var(--brand-primary)]/5 dark:bg-[var(--brand-primary)]/10 backdrop-blur-xl border border-[var(--brand-primary)]/10 dark:border-[var(--brand-primary)]/20 shadow-[0_8px_30px_rgba(112,0,255,0.04)] dark:shadow-[0_8px_30px_rgba(112,0,255,0.12)];
   }
 }

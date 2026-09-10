@@ -3,6 +3,7 @@
 import * as React from "react";
 import { Button } from "@/components/ui/button";
 import { useAnalytics } from "@/hooks/use-analytics";
+import { TrackedLink } from "@/components/ui/tracked-link";
 
 export default function ConnectLab() {
   const { trackEvent } = useAnalytics();
@@ -49,8 +50,19 @@ export default function ConnectLab() {
         <h1 className="font-display text-4xl sm:text-5xl font-bold text-[var(--brand-primary)] mb-4">
           Connect Lab
         </h1>
-        <p className="text-xl text-[var(--text-secondary)]">
+        <p className="text-xl text-[var(--text-secondary)] mb-6">
           Initiate a connection. Let&apos;s engineer something great together.
+        </p>
+        <p className="text-sm text-[var(--text-muted)]">
+          Prefer direct routing? Send a payload to{" "}
+          <TrackedLink 
+            href="mailto:aryandhandhukiya09@gmail.com" 
+            eventName="resume_clicked" 
+            eventMetadata={{ source: "direct_email_link" }}
+            className="text-[var(--brand-primary)] font-medium hover:underline"
+          >
+            aryandhandhukiya09@gmail.com
+          </TrackedLink>
         </p>
       </header>
 

@@ -1,0 +1,44 @@
+{
+  "philosophy": "AI should make an engineer faster and more capable, not less thoughtful.",
+  "workflow": [
+    {
+      "step": "Understand",
+      "description": "First understand the problem independently."
+    },
+    {
+      "step": "Explore",
+      "description": "Use AI to investigate possible solutions, patterns, and approaches."
+    },
+    {
+      "step": "Plan",
+      "description": "Use AI to explore architecture, implementation strategies, trade-offs, and edge cases."
+    },
+    {
+      "step": "Build",
+      "description": "Use AI-assisted development tools to accelerate implementation."
+    },
+    {
+      "step": "Review",
+      "description": "Read and verify generated code instead of accepting it blindly."
+    },
+    {
+      "step": "Debug",
+      "description": "Use AI as a debugging and reasoning partner while identifying the actual root cause."
+    },
+    {
+      "step": "Optimize",
+      "description": "Improve performance, readability, architecture, UX, and reliability."
+    },
+    {
+      "step": "Learn",
+      "description": "Understand why the generated solution works so the knowledge becomes part of Aryan's own engineering ability."
+    }
+  ],
+  "tools": [
+    "Antigravity",
+    "Codex",
+    "Claude",
+    "Cursor",
+    "GitHub Copilot"
+  ]
+}

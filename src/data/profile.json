@@ -1,0 +1,43 @@
+{
+  "identity": {
+    "name": "Aryan Dhandhukiya",
+    "preferredName": "Aryan",
+    "title": "Flutter Developer",
+    "positioning": "A passionate Flutter developer evolving into a broader product-oriented software engineer."
+  },
+  "introduction": "Aryan Dhandhukiya is a passionate software developer focused on building practical, user-centered digital products. His primary experience is in Flutter and cross-platform mobile development, while he continues to expand into web engineering, AI-assisted development, backend systems, and broader product engineering.",
+  "philosophy": "Build. Learn. Evolve. Repeat.",
+  "belief": "Technology should make people's lives easier.",
+  "workEthic": "Focus on the work, solve the problem, finish what was started, and keep improving the result.",
+  "education": [
+    {
+      "institution": "Gyanmanjri Institute of Technology",
+      "degree": "B.E. Information Technology",
+      "years": "2022–2026"
+    }
+  ],
+  "experience": [
+    {
+      "company": "Excelsior Technologies",
+      "role": "Flutter Developer",
+      "startDate": "02 February 2025",
+      "description": "Developing new products and applications, with practical exposure to building software intended for real users and production environments."
+    }
+  ],
+  "strengths": [
+    "Practical Problem Solving",
+    "Product-Minded Engineering",
+    "Continuous Evolution",
+    "AI-Assisted Development"
+  ],
+  "interests": [
+    "Backend Development",
+    "Software Architecture",
+    "System Design",
+    "Cloud Technologies",
+    "AI Engineering",
+    "Product Engineering",
+    "Automation"
+  ],
+  "future": "To become a significantly better software engineer while eventually owning and building a personal product."
+}

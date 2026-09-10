@@ -3,7 +3,7 @@
 import { useEffect, useCallback } from "react";
 import { usePathname } from "next/navigation";
 
-type EventName = 
+export type EventName = 
   | "page_view" 
   | "project_opened" 
   | "case_study_opened" 

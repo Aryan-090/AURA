@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { Mail } from "lucide-react";
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import socialsData from "@/data/socials.json";
+import { TrackedLink } from "@/components/ui/tracked-link";
 
 export function LaunchpadFooter() {
   const currentYear = new Date().getFullYear();
@@ -30,18 +32,37 @@ export function LaunchpadFooter() {
           <div>
             <h3 className="font-semibold text-[var(--text-primary)] mb-4">Connect</h3>
             <div className="flex space-x-4">
-              <a href="https://github.com/aryan-dhandhukiya" target="_blank" rel="noopener noreferrer" className="text-[var(--text-muted)] hover:text-[var(--brand-primary)] transition-colors" aria-label="GitHub">
+              <TrackedLink 
+                href={socialsData.github} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                eventName="github_clicked"
+                eventMetadata={{ source: "footer" }}
+                className="text-[var(--text-muted)] hover:text-[var(--brand-primary)] transition-colors" 
+                aria-label="GitHub"
+              >
                 <FaGithub size={20} />
-              </a>
-              <a href="https://linkedin.com/in/aryan-dhandhukiya" target="_blank" rel="noopener noreferrer" className="text-[var(--text-muted)] hover:text-[var(--brand-primary)] transition-colors" aria-label="LinkedIn">
+              </TrackedLink>
+              <TrackedLink 
+                href={socialsData.linkedin} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                eventName="resume_clicked" // using existing event mapped for external profiles
+                eventMetadata={{ source: "footer_linkedin" }}
+                className="text-[var(--text-muted)] hover:text-[var(--brand-primary)] transition-colors" 
+                aria-label="LinkedIn"
+              >
                 <FaLinkedin size={20} />
-              </a>
-              <a href="https://twitter.com/aryan_dev" target="_blank" rel="noopener noreferrer" className="text-[var(--text-muted)] hover:text-[var(--brand-primary)] transition-colors" aria-label="Twitter">
-                <FaTwitter size={20} />
-              </a>
-              <a href="mailto:hello@example.com" className="text-[var(--text-muted)] hover:text-[var(--brand-primary)] transition-colors" aria-label="Email">
+              </TrackedLink>
+              <TrackedLink 
+                href={`mailto:${socialsData.email}`} 
+                eventName="resume_clicked"
+                eventMetadata={{ source: "footer_email" }}
+                className="text-[var(--text-muted)] hover:text-[var(--brand-primary)] transition-colors" 
+                aria-label="Email"
+              >
                 <Mail size={20} />
-              </a>
+              </TrackedLink>
             </div>
           </div>
         </div>

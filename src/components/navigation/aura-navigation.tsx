@@ -3,9 +3,10 @@
 import * as React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Download } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { ThemeToggle } from "@/components/ui/theme-toggle";
+import { TrackedLink } from "@/components/ui/tracked-link";
 
 const navLinks = [
   { href: "/identity", label: "Identity" },
@@ -52,7 +53,17 @@ export function AuraNavigation() {
         </div>
         
         <div className="flex items-center gap-4">
-          <div className="hidden md:block">
+          <div className="hidden md:flex items-center gap-3">
+            <TrackedLink
+              href="https://1drv.ms/b/c/c1791387c2824c17/IQAKYRYsebmURYPiZLWgP0GrAZqiMVHtu3aJTz1KribaJt4?e=4Ib0pM"
+              target="_blank"
+              rel="noopener noreferrer"
+              eventName="resume_clicked"
+              eventMetadata={{ source: "navbar" }}
+              className="text-sm font-medium text-[var(--brand-primary)] hover:text-white hover:bg-[var(--brand-primary)] transition-colors px-4 py-2 border border-[var(--brand-primary)] rounded-md flex items-center gap-2"
+            >
+              <Download size={16} /> Resume
+            </TrackedLink>
             <Link 
               href="/connect" 
               className="text-sm font-medium text-[var(--text-primary)] hover:text-[var(--brand-primary)] transition-colors px-4 py-2 border border-[var(--border-color)] rounded-md"
@@ -90,9 +101,19 @@ export function AuraNavigation() {
                 {link.label}
               </Link>
             ))}
+            <TrackedLink
+              href="https://1drv.ms/b/c/c1791387c2824c17/IQAKYRYsebmURYPiZLWgP0GrAZqiMVHtu3aJTz1KribaJt4?e=4Ib0pM"
+              target="_blank"
+              rel="noopener noreferrer"
+              eventName="resume_clicked"
+              eventMetadata={{ source: "mobile_nav" }}
+              className="mt-4 p-4 rounded-lg text-lg font-medium border border-[var(--brand-primary)] text-[var(--brand-primary)] text-center flex items-center justify-center gap-2"
+            >
+              <Download size={20} /> Download Resume
+            </TrackedLink>
             <Link
               href="/connect"
-              className="mt-4 p-4 rounded-lg text-lg font-medium bg-[var(--brand-primary)] text-white text-center"
+              className="mt-2 p-4 rounded-lg text-lg font-medium bg-[var(--brand-primary)] text-white text-center"
             >
               Connect
             </Link>

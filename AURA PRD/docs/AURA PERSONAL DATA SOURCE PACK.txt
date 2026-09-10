@@ -1,0 +1,645 @@
+# AURA PERSONAL DATA SOURCE PACK
+
+## 1. Personal Identity
+
+**Name:** Aryan Dhandhukiya
+**Preferred Name:** Aryan
+**Current Role:** Flutter Developer
+**Primary Discipline:** Mobile Application Development
+**Additional Knowledge:** Web Development, AI-assisted Development, Product Engineering
+**Education:** B.E. Information Technology, Gyanmanjri Institute of Technology, 2022–2026
+**Current Employment:** Excelsior Technologies
+**Joined:** 02 February 2025
+
+### Personal Introduction
+
+Aryan Dhandhukiya is a passionate software developer focused on building practical, user-centered digital products. His primary experience is in Flutter and cross-platform mobile development, while he continues to expand into web engineering, AI-assisted development, backend systems, and broader product engineering.
+
+He enjoys understanding how products work from the inside, solving real problems through technology, and continuously improving both his technical fundamentals and his ability to build production-ready software.
+
+### Developer Identity
+
+Aryan currently identifies primarily as a **Flutter Developer**, with growing knowledge across:
+
+* Web Development
+* AI-assisted Engineering
+* Product Engineering
+* API Integration
+* Firebase
+* Backend concepts
+* Software Architecture
+
+His engineering direction is broader than a single framework: he is working toward becoming a stronger **product-oriented software engineer**.
+
+---
+
+## 2. What Makes Aryan Different
+
+Aryan is highly passionate about his work and strongly focused on completion.
+
+When building something, he does not simply aim to make it function. He tries to find solutions that are:
+
+* Practical
+* User-oriented
+* Efficient
+* Reliable
+* Better suited to the actual problem
+
+He prioritizes meaningful progress and getting the work done rather than watching the clock.
+
+### Core Work Ethic
+
+> Focus on the work, solve the problem, finish what was started, and keep improving the result.
+
+---
+
+## 3. Personal Philosophy
+
+### Operating Philosophy
+
+**Build. Learn. Evolve. Repeat.**
+
+### Core Belief
+
+> Technology should make people's lives easier.
+
+### Engineering Philosophy
+
+Aryan believes good engineering starts with understanding the problem before choosing the technology.
+
+His approach emphasizes:
+
+* Understand the real problem
+* Think from the user's perspective
+* Build practical solutions
+* Learn from implementation
+* Improve through iteration
+* Use modern tools intelligently
+* Avoid blindly accepting generated solutions
+* Keep growing technical fundamentals
+
+For Aryan, becoming a better developer is not only about learning more technologies. It is about becoming better at **thinking, solving, building, and improving**.
+
+---
+
+# 4. Journey
+
+## Starting Point
+
+Aryan began learning programming after joining college, with his software development journey becoming much more serious during the third year of college.
+
+The motivation was curiosity and creation: understanding how applications are built, how mobile applications work internally, and how technology can be used to solve real problems.
+
+## Early Learning
+
+His early learning path began with:
+
+1. C
+2. HTML
+3. CSS
+4. Dart
+5. Flutter
+
+Flutter became a major focus around **mid-2025** as Aryan began using it to build cross-platform mobile applications.
+
+## College Technology Events
+
+Aryan participated in college-level technology events and built IoT-based projects.
+
+### Smart Farm
+
+A technology-focused farming concept intended to help farmers use technology and automation to improve farming-related processes.
+
+### Smart Class
+
+An IoT-based classroom automation concept where classroom systems such as lights, fans, and air conditioning could automatically operate according to class schedules.
+
+These projects helped Aryan explore the connection between software, hardware, automation, and real-world problem solving.
+
+## Professional Journey
+
+### Excelsior Technologies
+
+**Joined:** 02 February 2025
+**Role:** Flutter Developer
+
+At Excelsior Technologies, Aryan works on developing new products and applications and has gained experience working toward production-ready software.
+
+His professional exposure includes:
+
+* Flutter development
+* Dart
+* Firebase
+* API integration
+* Real-time messaging
+* Wallet/payment-related features
+* Product development
+* Production-focused application development
+* Problem solving in real product environments
+
+### InflueNex
+
+Aryan has worked on an influencer marketing product designed to help digital creators and brands collaborate and grow together.
+
+**Role:** Flutter Developer
+**Status:** Ongoing
+
+The project has provided experience in building functionality for a real-world product rather than only academic or experimental applications.
+
+---
+
+# 5. Skills
+
+## Primary Skill Level
+
+Overall self-assessed level:
+
+**Intermediate**
+
+## Core / Mobile Engineering
+
+* Flutter — Intermediate
+* Dart — Intermediate
+* Firebase — Intermediate
+* Mobile Application Development — Intermediate
+* API Integration — Intermediate
+* Real-time Application Features — Intermediate
+
+## Web Engineering
+
+* HTML
+* CSS
+* JavaScript
+* React
+* Next.js
+* TypeScript
+* Tailwind CSS
+
+These represent a growing secondary engineering area rather than Aryan's primary professional specialization.
+
+## Programming & Data
+
+* C
+* C++
+* Dart
+* JavaScript
+* SQL
+* PostgreSQL
+
+## Development Tools
+
+* Git
+* GitHub
+* VS Code
+* Postman
+* Figma
+
+## AI-Assisted Engineering
+
+Aryan actively uses AI development tools including:
+
+* Antigravity
+* Codex
+* Claude
+* Cursor
+* GitHub Copilot
+
+Relevant AI engineering skills:
+
+* Prompt Engineering
+* AI-assisted Development
+* AI-assisted Code Generation
+* Architecture Exploration
+* Rapid Prototyping
+* AI-assisted Debugging
+* AI-assisted Code Review
+
+## Learning / Exploring
+
+Aryan is continuing to develop knowledge in:
+
+* Backend Development
+* Software Architecture
+* System Design
+* Cloud Technologies
+* AI Engineering
+* Product Engineering
+* Automation
+
+These should be presented as **learning/exploration areas**, not as expert-level skills.
+
+---
+
+# 6. Projects
+
+## 6.1 InflueNex
+
+**Category:** Production / Professional Product
+**Status:** Ongoing
+**Role:** Flutter Developer
+
+### What is it?
+
+InflueNex is an influencer marketing platform designed to help digital creators and brands collaborate and grow together.
+
+### Why was it built?
+
+To create a platform where creators and brands can connect, collaborate, and create mutually beneficial opportunities.
+
+### Technology
+
+* Flutter
+* Dart
+* API Integration
+
+### Role & Contribution
+
+Aryan contributes as a Flutter Developer, working on product features and mobile application development.
+
+### Case Study Status
+
+Detailed technical information should be added only from verified project details.
+
+---
+
+## 6.2 FitLife
+
+**Category:** Personal Product
+**Status:** Completed
+**Role:** Builder / Developer
+
+### What is it?
+
+FitLife is an AI-powered fitness tracking application focused on helping people become more aware of their health and fitness.
+
+### Why was it built?
+
+To help users better understand and track aspects of their health and fitness journey.
+
+### Technology
+
+* Flutter
+* Dart
+* Firebase
+* OpenFood API
+* QR Scanner
+
+### Case Study Status
+
+Additional details required for:
+
+* Main features
+* Architecture
+* AI implementation
+* Challenges
+* Technical decisions
+* Lessons learned
+* Screenshots
+* GitHub/demo links
+
+---
+
+## 6.3 MySpend
+
+**Category:** Personal Product
+**Status:** Completed
+**Role:** Builder / Developer
+
+### What is it?
+
+MySpend is a daily spending and transaction tracking application designed to help users manage their finances.
+
+### Why was it built?
+
+To help users track daily transactions and better manage their spending.
+
+### Technology
+
+* Flutter
+* Dart
+* Firebase
+
+### Notable Design Direction
+
+* Glass-style visual design
+* Gradient-based visual system
+
+### Case Study Status
+
+Additional technical details required.
+
+---
+
+## 6.4 SplitMate
+
+**Status:** DATA_REQUIRED
+
+Verified information required before publishing.
+
+---
+
+## 6.5 MyInventory
+
+**Status:** DATA_REQUIRED
+
+Verified information required before publishing.
+
+---
+
+## 6.6 MedCare
+
+**Status:** DATA_REQUIRED
+
+Verified information required before publishing.
+
+---
+
+## 6.7 Todo
+
+**Status:** DATA_REQUIRED
+
+Verified information required before publishing.
+
+---
+
+## 6.8 Notes
+
+**Status:** DATA_REQUIRED
+
+Verified information required before publishing.
+
+---
+
+# 7. Professional Experience
+
+## Excelsior Technologies
+
+**Role:** Flutter Developer
+**Start Date:** 02 February 2025
+
+### Responsibilities / Exposure
+
+Aryan works on developing new products and applications, with practical exposure to building software intended for real users and production environments.
+
+### Technologies / Areas
+
+* Flutter
+* Dart
+* Firebase
+* API integration
+* Real-time messaging
+* Wallet/payment functionality
+* Mobile product development
+* Production-oriented engineering
+
+### Professional Growth
+
+The experience has helped Aryan understand more than simply how to write code.
+
+It has contributed to learning:
+
+* How to approach real product problems
+* How to translate requirements into working features
+* How to think about production readiness
+* How to debug real application issues
+* How to work with connected systems and APIs
+* How to build features for actual users
+* How to improve solutions beyond simply making them work
+
+**Public visibility:** Approved for use on AURA.
+
+---
+
+# 8. AI Engineering Workflow
+
+Aryan uses AI as an engineering accelerator, not as a replacement for engineering judgment.
+
+### Workflow
+
+**1. Understand**
+First understand the problem independently.
+
+**2. Explore**
+Use AI to investigate possible solutions, patterns, and approaches.
+
+**3. Plan**
+Use AI to explore architecture, implementation strategies, trade-offs, and edge cases.
+
+**4. Build**
+Use AI-assisted development tools to accelerate implementation.
+
+**5. Review**
+Read and verify generated code instead of accepting it blindly.
+
+**6. Debug**
+Use AI as a debugging and reasoning partner while identifying the actual root cause.
+
+**7. Optimize**
+Improve performance, readability, architecture, UX, and reliability.
+
+**8. Learn**
+Understand why the generated solution works so the knowledge becomes part of Aryan's own engineering ability.
+
+### AI Tools
+
+* Antigravity
+* Codex
+* Claude
+* Cursor
+* GitHub Copilot
+
+### AI Philosophy
+
+> AI should make an engineer faster and more capable, not less thoughtful.
+
+---
+
+# 9. Innovation & Future Direction
+
+## Right Now
+
+Aryan is focused on:
+
+* Strengthening software development fundamentals
+* Building production-ready products
+* Improving Flutter expertise
+* Expanding web development knowledge
+* Learning backend systems
+* Understanding software architecture
+* Improving AI-assisted development workflows
+
+## Next
+
+Potential areas of focus:
+
+* Building more complete end-to-end products
+* AI-powered applications
+* Stronger backend integration
+* Better architecture and scalability
+* Automation-driven products
+* More advanced cross-platform experiences
+
+These should be treated as **directional goals**, not confirmed future products.
+
+## Technologies to Master
+
+Longer-term technical goals include deeper mastery of:
+
+* Flutter
+* Dart
+* Backend Engineering
+* APIs
+* Databases
+* System Architecture
+* Cloud Technologies
+* AI Engineering
+* Modern Web Engineering
+
+## Problems Aryan Wants to Solve
+
+Aryan is most interested in building technology that:
+
+* Makes everyday tasks easier
+* Solves real user problems
+* Connects people and businesses
+* Improves productivity
+* Uses AI meaningfully
+* Turns difficult workflows into simpler digital experiences
+
+## Long-Term Goal
+
+Aryan wants to become a significantly better software engineer while eventually owning and building a personal product.
+
+### Entrepreneurial Direction
+
+> Build something useful enough that people choose to use it.
+
+## $1M Vision
+
+If given $1M, Aryan would likely use it to start a startup and build a product around a meaningful problem.
+
+---
+
+# 10. Achievements & Activities
+
+## Excelsior AI Hackathon
+
+Aryan participated in the **Excelsior AI Hackathon ’26**.
+
+The team worked on **FulFillX**, exploring how AI-driven thinking and intelligent automation could be applied to a real-world fulfillment-related problem.
+
+The project involved building and presenting a working solution as part of the company hackathon.
+
+## College IoT Projects
+
+Participated in college-level technology events and developed:
+
+* Smart Farm
+* Smart Class
+
+These projects demonstrate early exploration of IoT, automation, and practical technology solutions.
+
+## NSS
+
+Completed NSS activities during college.
+
+---
+
+# 11. Public Links
+
+**GitHub:**
+https://github.com/Aryan-090/Aryan-090
+
+**LinkedIn:**
+https://www.linkedin.com/in/aryan-dhandhukiya-871baa360
+
+**Email:**
+[aryandhandhukiya09@gmail.com](mailto:aryandhandhukiya09@gmail.com)
+
+**Resume:**
+Available through LinkedIn
+
+---
+
+# 12. Public Content Rules
+
+AURA may publicly present:
+
+* Aryan's name
+* Developer identity
+* Education
+* Professional experience
+* Excelsior Technologies experience
+* Public projects
+* Skills
+* Engineering philosophy
+* AI workflow
+* Hackathon participation
+* IoT projects
+* NSS participation
+* GitHub
+* LinkedIn
+* Email
+
+AURA must NOT:
+
+* Invent technologies Aryan has not used
+* Invent project features
+* Invent achievements
+* Claim expert-level knowledge without evidence
+* Fabricate metrics or business impact
+* Fabricate employment responsibilities
+* Present learning/exploration topics as mastered skills
+* Create fictional project case studies
+
+---
+
+# 13. Content Confidence Rules
+
+Use three internal confidence levels:
+
+### VERIFIED
+
+Information explicitly provided by Aryan or verified through a connected project/source.
+
+### INFERRED
+
+Reasonable positioning based on Aryan's stated goals and experience.
+
+Inferred information should never be presented as a concrete achievement or factual claim.
+
+### DATA_REQUIRED
+
+Information that has not yet been provided and must not be fabricated.
+
+---
+
+# 14. AURA Content Direction
+
+AURA should communicate Aryan as:
+
+**A passionate Flutter developer evolving into a broader product-oriented software engineer.**
+
+The story is not:
+
+> “I know many technologies.”
+
+The story is:
+
+> “I started with curiosity, learned by building, entered real product development, adopted AI intelligently, and continue evolving into a stronger engineer.”
+
+### Core Narrative
+
+**Curiosity → Learning → Building → Real Products → AI-Assisted Engineering → Continuous Evolution**
+
+### Brand Philosophy
+
+**Build. Learn. Evolve. Repeat.**
+
+### Core Belief
+
+**Technology should make people's lives easier.**
+
+### Personal Positioning
+
+> Aryan builds digital products with curiosity, persistence, and a strong focus on practical user outcomes—and is continuously evolving toward deeper product engineering, architecture, backend, and AI capabilities.
