@@ -61,7 +61,7 @@ export default function ArrivalPage() {
               </Button>
             </Link>
             <Link href="/identity">
-              <Button variant="outline" size="lg" className="text-lg px-8 py-6 rounded-xl glass-01 border-[var(--border-color)] hover:border-[var(--brand-primary)] hover:bg-[var(--brand-primary)]/10 transition-all text-[var(--text-primary)]">
+              <Button variant="secondary" size="lg" className="text-lg px-8 py-6 rounded-xl glass-01 border border-[var(--border-color)] hover:border-[var(--brand-primary)] hover:bg-[var(--brand-primary)]/10 transition-all text-[var(--text-primary)]">
                 Enter AURA
               </Button>
             </Link>

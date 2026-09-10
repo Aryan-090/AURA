@@ -118,7 +118,7 @@
 
   /* Legacy glass-panel alias to maintain existing component styling until refactored */
   .glass-panel {
-    @apply glass-01 shadow-sm;
+    @apply bg-[var(--brand-primary)]/5 dark:bg-[var(--brand-primary)]/10 backdrop-blur-md border border-[var(--brand-primary)]/10 dark:border-[var(--brand-primary)]/20 shadow-sm;
   }
 
   /* --- Depth System --- */

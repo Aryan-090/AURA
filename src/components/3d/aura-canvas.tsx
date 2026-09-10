@@ -5,7 +5,6 @@ import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { Float, Icosahedron, MeshTransmissionMaterial, Points, PointMaterial } from "@react-three/drei";
 import { useTheme } from "next-themes";
 import * as THREE from "three";
-import { random } from "mathjs"; // Using mathjs or just Math.random
 
 // --- Floating Particles ---
 function ParticleField() {
