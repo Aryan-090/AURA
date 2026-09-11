@@ -150,7 +150,12 @@ export function AuraCanvas() {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <Canvas camera={{ position: [0, 0, 6], fov: 45 }} dpr={[1, 1.5]} gl={{ antialias: false, powerPreference: "high-performance" }}>
+      <Canvas 
+        camera={{ position: [0, 0, 6], fov: 45 }} 
+        dpr={[1, 1.5]} 
+        gl={{ antialias: false, powerPreference: "high-performance" }}
+        frameloop={isVisible ? "always" : "demand"}
+      >
         {isVisible && (
           <>
             <ambientLight intensity={0.2} />
